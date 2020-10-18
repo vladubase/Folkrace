@@ -1,0 +1,26 @@
+RAM Allocation [bytes]
+Variable                                                                          Address   Size
+------------------------------------------------------------------------------------------------
+line_data                                                                         0x0300       8
+_seed                                                                             0x0308       4
+
+EEPROM Allocation [bytes]
+Variable                                                                          Address   Size
+------------------------------------------------------------------------------------------------
+
+Register Allocation
+Variable                                                                          Register  Size
+------------------------------------------------------------------------------------------------
+
+FLASH Allocation [words]
+Function                                                                          Address   Size
+------------------------------------------------------------------------------------------------
+main                                                                              0x0008B    196
+InitSys                                                                           0x0014F    105
+ReadSensorLineData                                                                0x001B8     49
+CurrentRobotError                                                                 0x001E9     58
+ftrunc                                                                            0x00223     49
+floor                                                                             0x00254     21
+log                                                                               0x00269    132
+exp                                                                               0x002ED    150
+pow                                                                               0x00383     80
