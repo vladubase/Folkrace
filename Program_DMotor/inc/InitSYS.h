@@ -3,7 +3,7 @@
 
 /****
 	*	@name		DMotor_folkrace
-	*	@file 		InitGPIO.h
+	*	@file 		InitSYS.h
 	*
 	*	@author 	Uladzislau 'vladubase' Dubatouka
 	*				<vladubase@gmail.com>
@@ -18,7 +18,7 @@
 
 /********************************* Function  prototypes *******************************/
 
-void InitGPIO (void);
+void InitSYS (void);
 
 
 #endif /* _INIT_GPIO_H_ */

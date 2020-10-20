@@ -40,7 +40,7 @@ SUBDIRS :=  \
 # Add inputs and outputs from these tool invocations to the build variables 
 C_SRCS +=  \
 ../main.c \
-../src/InitGPIO.c \
+../src/InitSYS.c \
 ../src/InitI2C.c
 
 
@@ -52,22 +52,22 @@ ASM_SRCS +=
 
 OBJS +=  \
 main.o \
-src/InitGPIO.o \
+src/InitSYS.o \
 src/InitI2C.o
 
 OBJS_AS_ARGS +=  \
 main.o \
-src/InitGPIO.o \
+src/InitSYS.o \
 src/InitI2C.o
 
 C_DEPS +=  \
 main.d \
-src/InitGPIO.d \
+src/InitSYS.d \
 src/InitI2C.d
 
 C_DEPS_AS_ARGS +=  \
 main.d \
-src/InitGPIO.d \
+src/InitSYS.d \
 src/InitI2C.d
 
 OUTPUT_FILE_PATH +=DMotor_folkrace.elf
@@ -91,7 +91,7 @@ LINKER_SCRIPT_DEP+=
 	@echo Finished building: $<
 	
 
-src/InitGPIO.o: ../src/InitGPIO.c
+src/InitSYS.o: ../src/InitSYS.c
 	@echo Building file: $<
 	@echo Invoking: AVR/GNU C Compiler : 5.4.0
 	$(QUOTE)C:\User Programs\Atmel Studio\7.0\toolchain\avr8\avr8-gnu-toolchain\bin\avr-gcc.exe$(QUOTE)  -x c -funsigned-char -funsigned-bitfields -DDEBUG  -I"C:\User Programs\Atmel Studio\7.0\Packs\atmel\ATmega_DFP\1.3.300\include" -I"D:\Documents\Workspace\Folkrace\DMotor\Program\inc"  -O1 -ffunction-sections -fdata-sections -fpack-struct -fshort-enums -g2 -Wall -mmcu=atmega328p -B "C:\User Programs\Atmel Studio\7.0\Packs\atmel\ATmega_DFP\1.3.300\gcc\dev\atmega328p" -c -std=gnu99 -MD -MP -MF "$(@:%.o=%.d)" -MT"$(@:%.o=%.d)" -MT"$(@:%.o=%.o)"   -o "$@" "$<" 

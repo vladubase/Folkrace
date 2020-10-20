@@ -17,8 +17,8 @@
 #include <math.h>
 #include <stdbool.h>
 #include <stdint.h>
-#include "InitGPIO.h"
-#include "InitI2C.h"
+#include "InitSYS.h"
+//#include "InitI2C.h"
 
 
 /*************************************** Defines **************************************/

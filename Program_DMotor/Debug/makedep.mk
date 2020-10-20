@@ -4,7 +4,7 @@
 
 main.c
 
-src\InitGPIO.c
+src\InitSYS.c
 
 src\InitI2C.c
 
